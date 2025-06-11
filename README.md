@@ -1,70 +1,62 @@
-# Getting Started with Create React App
+# CRM React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Welcome to the **CRM React App** ("Product Management"). This repository contains a React JS web application implementing a simple CRM with authentication, dashboard visualizations, and product management features.
 
-## Available Scripts
+## Overview
 
-In the project directory, you can run:
+This project was created as part of an SDE assignment to build a full-stack-like CRM front-end using React, Redux, and dummy REST APIs. It includes:
 
-### `npm start`
+- A **Login Page** with form validation and toast notifications.  
+- **Authentication** via public/private routing guards.  
+- A **Dashboard** with summary cards and interactive charts.  
+- **Product Management**: full CRUD operations with search, sorting, and pagination.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Features
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **Login & Authentication**: Protected routes ensure only authenticated users access the dashboard and products page.  
+- **Dashboard**:  
+  - Summary cards showing total products, average price, and average rating.  
+  - Line chart and bar chart visualizing product data.  
+- **Product Management**:  
+  - Add, edit, and delete products using a styled form with inline validation.  
+  - Client-side search, sortable columns, and pagination in the product list table.  
+- **Responsive Design**: Hamburger menu on mobile, adaptable card layouts.  
+- **State Management**: Implemented with Redux Toolkit and React-Redux.  
+- **Form Handling**: Built with Formik and Yup for validation.  
+- **Notifications**: Success/error toasts using react-toastify.
 
-### `npm test`
+## Technologies Used
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **React** (v18)  
+- **React Router DOM** for routing  
+- **Redux Toolkit** & **React-Redux** for state management  
+- **Formik** + **Yup** for form validation  
+- **Recharts** for data visualization  
+- **Axios** for HTTP requests  
+- **React-Toastify** for notifications  
+- **CSS** custom theming and responsive design  
 
-### `npm run build`
+## Login Credentials
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Use the following test accounts (from dummyjson.com):
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- **Username:** `emilys`  
+  **Password:** `emilyspass`
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Getting Started
 
-### `npm run eject`
+Follow these steps to run the application locally.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Prerequisites
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- [Node.js](https://nodejs.org/) (>=14) and npm installed
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Installation
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```bash
+# Clone this repository
+git clone <YOUR_REPOSITORY_URL>
+cd <YOUR_REPOSITORY_NAME>
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+# Install dependencies
+npm install
